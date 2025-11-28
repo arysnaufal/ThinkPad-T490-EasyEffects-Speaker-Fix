@@ -1,5 +1,5 @@
-# ThinkPad-T490-EasyEffects-Speaker-Fix
-The ultimate EasyEffects preset to transform the ThinkPad T490's notorious "tin-can" speakers into a warm, (maybe) MacBook-style audio experience. Tested on Fedora 43 with KDE Plasma (PipeWire). Eliminates harsh treble and nasal midrange via aggressive V-Cut EQ.
+# Bruh, im tired hearing this "tin-can" T490 speakers, so i decided to...
+Make EasyEffects preset and transforming my ThinkPad T490's notorious "tin-can" speakers into a warm, (maybe) MacBook-style audio experience. Tested on Fedora 43 with KDE Plasma (PipeWire). Eliminates harsh treble and nasal midrange via aggressive V-Cut EQ.
 
 # 1. The Journey: From Tin-Can to MacBook
 Like many (or maybe some) ThinkPad T490 users, I was constantly frustrated by the internal speakers. They were tinny, harsh, and the sound felt trapped inside the chassis. The audio lacked body, warmth, and the punch necessary for modern music.
