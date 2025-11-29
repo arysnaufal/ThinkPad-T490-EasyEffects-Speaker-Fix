@@ -14,16 +14,16 @@ Notes: Decrease Input Gain for Equalizer Filter to -3.5 to ensures headroom for 
 
 | Band | Frequency | Final Gain (dB) | Rationale & Result |
 | :---: | :---: | :---: | :--- |
-| **1** | 30 Hz | -18.0 | **Total Sub-Bass Cut:** Eliminates distortion-causing sub-frequencies (useless on T490 drivers). |
-| **2** | 60 Hz | **-7.5** | **CRITICAL CUT (Anti-Rumble):** Aggressively eliminates deep bass boominess and the "gemuruh" sound from bass-heavy tracks (e.g., Billie Eilish - Bad Guy). |
-| **3** | 119 Hz | **+3.5** | **CLEAN PUNCH ANCHOR:** Strong boost to provide the main body, warmth, and punch without rumbling. |
+| **1** | 30 Hz | -18.0 | **Total Sub-Bass Cut:** Eliminates useless, distortion-causing sub-frequencies. |
+| **2** | 60 Hz | -7.5 | **CRITICAL CUT (Anti-Rumble):** Aggressively eliminates deep bass boominess and the "gemuruh" sound. |
+| **3** | 119 Hz | +4.0 | **CLEAN PUNCH ANCHOR:** Strong boost to provide the main body, warmth, and punch without rumbling. |
 | **4** | 237 Hz | +1.5 | **Body Definition:** Adds subtle low-mid warmth and instrument definition. |
 | **5** | 474 Hz | -6.0 | **Muddy/Boxy Filter:** Removes low-mid frequencies that cause a "muffled" or "muddy" sound. |
 | **6** | 947 Hz | -11.5 | **EXTREME NASAL/TELEPHONE CUT:** Eliminates the primary source of the T490's "tin-can" sound. |
-| **7** | 1.8 kHz | -11.5 | **Extreme Harshness Cut:** Removes piercing upper-mid frequencies that cause listener fatigue. |
-| **8** | 3.7 kHz | -11.5 | **Harshness Cut (High Mid):** Deep cut to eliminate sharp, fatiguing sounds. |
-| **9** | **7.5 kHz** | **-9.0** | **FINAL TREBLE TAME:** Aggressive cut to soften sibilance and make high frequencies comfortable. |
-| **10** | **15 kHz** | **-7.0** | **AIR/DETAIL BALANCE:** Final adjustment to remove harshness while retaining crucial high-end detail and "air." |
+| **7** | 1.8 kHz | **-9.5** | **HARSHNESS ZONE FIX:** *Lifted* from earlier cuts to bring back necessary presence and clarity. |
+| **8** | 3.7 kHz | **-9.5** | **MID-TREBLE BALANCE:** *Lifted* to ensure treble details are present without being piercing. |
+| **9** | 7.5 kHz | -9.0 | **TREBLE SOFTENER:** Aggressive cut to soften sibilance and make high frequencies comfortable. |
+| **10** | 15 kHz | -7.0 | **AIR/DETAIL BALANCE:** Final adjustment to ensure crucial high-end detail remains. |
 
 # 3. The Power Chain (Compressor, Loudness, Limiter)
 The EQ cuts are balanced by a complex power chain to ensure maximum volume without distortion (clipping):
