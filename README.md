@@ -12,24 +12,28 @@ This T490_Clear_Audio_Fix.json preset is the culmination of weeks of aggressive 
 This preset focuses on an aggressive V-Cut strategy, primarily removing the problematic frequencies rather than boosting the weak ones.
 Notes: Decrease Input Gain for Equalizer Filter to -3.5 to ensures headroom for the Loudness/Compressor chain.
 
+## 2. Technical Philosophy: The Extreme V-Cut
+This preset focuses on an aggressive V-Cut strategy, primarily reducing the problematic frequencies rather than boosting the weak ones.
+
 | Band | Frequency | Final Gain (dB) | Rationale & Result |
 | :---: | :---: | :---: | :--- |
 | **1** | 30 Hz | -18.0 | **Total Sub-Bass Cut:** Eliminates useless, distortion-causing sub-frequencies. |
-| **2** | 60 Hz | -7.5 | **CRITICAL CUT (Anti-Rumble):** Aggressively eliminates deep bass boominess and the "gemuruh" sound. |
-| **3** | 119 Hz | +4.0 | **CLEAN PUNCH ANCHOR:** Strong boost to provide the main body, warmth, and punch without rumbling. |
-| **4** | 237 Hz | +1.5 | **Body Definition:** Adds subtle low-mid warmth and instrument definition. |
+| **2** | 60 Hz | **-7.5** | **CRITICAL CUT (Anti-Rumble):** Aggressively eliminates deep bass boominess and the "gemuruh" sound. |
+| **3** | 119 Hz | **+4.0** | **CLEAN PUNCH ANCHOR:** Strong boost to provide the main body, warmth, and punch. |
+| **4** | 237 Hz | **+2.5** | **Body Definition:** Adds subtle low-mid warmth and instrument definition. |
 | **5** | 474 Hz | -6.0 | **Muddy/Boxy Filter:** Removes low-mid frequencies that cause a "muffled" or "muddy" sound. |
 | **6** | 947 Hz | -11.5 | **EXTREME NASAL/TELEPHONE CUT:** Eliminates the primary source of the T490's "tin-can" sound. |
-| **7** | 1.8 kHz | **-9.5** | **HARSHNESS ZONE FIX:** *Lifted* from earlier cuts to bring back necessary presence and clarity. |
-| **8** | 3.7 kHz | **-9.5** | **MID-TREBLE BALANCE:** *Lifted* to ensure treble details are present without being piercing. |
-| **9** | 7.5 kHz | -9.0 | **TREBLE SOFTENER:** Aggressive cut to soften sibilance and make high frequencies comfortable. |
-| **10** | 15 kHz | -7.0 | **AIR/DETAIL BALANCE:** Final adjustment to ensure crucial high-end detail remains. |
+| **7** | **1.8 kHz** | **-10.5** | **HARSHNESS ZONE FIX:** Final *Goldilocks* cut to suppress piercing sounds while retaining presence. |
+| **8** | **3.7 kHz** | **-10.5** | **MID-TREBLE BALANCE:** Final *Goldilocks* cut to tame high-mid sharpness and ensure comfort. |
+| **9** | 7.5 kHz | -9.0 | **TREBLE SOFTENER:** Aggressive cut to soften sibilance. |
+| **10** | 15 kHz | -7.5 | **AIR/DETAIL BALANCE:** Final adjustment to ensure crucial high-end detail remains. |
 
-# 3. The Power Chain (Compressor, Loudness, Limiter)
+# 3. The Power Chain (Autogain, Compressor, Loudness, Limiter)
 The EQ cuts are balanced by a complex power chain to ensure maximum volume without distortion (clipping):
-  1. Compressor: Makeup Gain is set to 0.0 dB to prevent over-boosting of compressed sound. This was the final crucial fix to eliminate vocal "rumbling" on heavy bass tracks (like Billie Eilish's Bad Guy).
-  2. Dual Loudness: Two instances of the Loudness filter (+7.0 dB and +4.5 dB) are used to intelligently compensate for the deep EQ cuts, ensuring the sound remains loud and full across all genres.
-  3. Limiter (Safety Net):Threshold is set at -0.2 dB to act as a hard safety ceiling. This guarantees that even at 100% volume, the physical speaker drivers will not clip or suffer long-term damage.
+  1. Autogain: Maximum history 30s to keep volume consistent on every music or audio, with -18.0 db target for reducing speaker stress.
+  2. Compressor: Makeup Gain is set to 0.0 dB to prevent over-boosting of compressed sound. This was the final crucial fix to eliminate vocal "rumbling" on heavy bass tracks (like Billie Eilish's Bad Guy).
+  3. Dual Loudness: Two instances of the Loudness filter (+7.0 dB and +4.0 dB) are used to intelligently compensate for the deep EQ cuts, ensuring the sound remains loud and full across all genres.
+  4. Limiter (Safety Net):Threshold is set at -0.2 dB to act as a hard safety ceiling. This guarantees that even at 100% volume, the physical speaker drivers will not clip or suffer long-term damage.
 
 # 4. Installation Instructions
   1. Ensure you have EasyEffects installed on your Linux distribution (PipeWire is required). Use EasyEffects from Flatpak with 8.0.5 version or above (I don't know if it working below 8.0.5 version or not, you can try to import it if you want).
