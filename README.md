@@ -12,9 +12,6 @@ This T490_Clear_Audio_Fix.json preset is the culmination of weeks of aggressive 
 This preset focuses on an aggressive V-Cut strategy, primarily removing the problematic frequencies rather than boosting the weak ones.
 Notes: Decrease Input Gain for Equalizer Filter to -3.5 to ensures headroom for the Loudness/Compressor chain.
 
-## 2. Technical Philosophy: The Extreme V-Cut
-This preset focuses on an aggressive V-Cut strategy, primarily reducing the problematic frequencies rather than boosting the weak ones.
-
 | Band | Frequency | Final Gain (dB) | Rationale & Result |
 | :---: | :---: | :---: | :--- |
 | **1** | 30 Hz | -18.0 | **Total Sub-Bass Cut:** Eliminates useless, distortion-causing sub-frequencies. |
